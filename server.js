@@ -16,7 +16,7 @@ app.get(/^\/munin-cgi\/([^\/]*)\/(.*)/, function (req, res, next) {
     uid: muninUser.uid,
     gid: muninUser.gid
   };
-  cgi('/var/www/cgi-bin/' + cgiOpts)(req, res, next);
+  cgi('/var/www/cgi-bin/' + req.params[0], cgiOpts)(req, res, next);
 });
 
 var server = http.createServer(app);
