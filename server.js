@@ -7,7 +7,6 @@ var app = express();
 
 // look up the munin user and group
 var muninUser = posix.getpwnam('munin');
-var muninGroup = posix.getgrnnam('munin');
 
 // expects static files in /var/www/html/munin and cgi files in /var/www/cgi-bin
 app.use(express.static('/var/www/html/munin'));
