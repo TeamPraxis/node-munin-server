@@ -1,0 +1,18 @@
+{
+  "name": "node-munin-server",
+  "description": "Node.js web server to serve munin content",
+  "version": "0.1.0",
+  "license": "BSD",
+  "keywords": [
+    "munin"
+  ],
+  "main": "./server.js",
+  "dependencies": {
+    "express": "~3.5.0",
+    "cgi": "~0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TeamPraxis/node-munin-server.git"
+  }
+}
