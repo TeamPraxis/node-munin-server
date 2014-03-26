@@ -9,7 +9,8 @@
   "main": "./server.js",
   "dependencies": {
     "express": "~3.5.0",
-    "cgi": "~0.2.0"
+    "cgi": "git+ssh://git@github.com:TeamPraxis/node-cgi.git",
+    "posix": "~1.0.0"
   },
   "repository": {
     "type": "git",
