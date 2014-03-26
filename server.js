@@ -11,6 +11,6 @@ app.get(/^\/munin-cgi\/([^\/]*)\/(.*)/, function (req, res, next) {
 });
 
 var server = http.createServer(app);
-server.listen(3000, function () {
+server.listen(80, function () {
   console.log('Munin server started.');
 });
