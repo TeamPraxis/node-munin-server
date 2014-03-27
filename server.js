@@ -99,7 +99,8 @@ if (oauthConf) {
     if (!req.isAuthenticated() &&
         (req.path !== '/auth/oauth') &&
         (req.path !== '/auth/oauth/callback') &&
-        (req.path !== '/auth/noauth'))
+        (req.path !== '/auth/noauth') &&
+        (req.path !== '/environment'))
     {
       res.redirect('/auth/oauth');
     } else {
