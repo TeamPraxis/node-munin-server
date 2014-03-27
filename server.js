@@ -126,6 +126,10 @@ if (oauthConf) {
   app.get('/auth/noauth', function (req, res) {
     res.status(403).send('Forbidden');
   });
+  app.get('/environment', function (req, res) {
+    // dummy route for health check
+    res.status(200).send('OK');
+  });
 }
 
 var server = http.createServer(app);
