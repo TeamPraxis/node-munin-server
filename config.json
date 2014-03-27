@@ -1,0 +1,13 @@
+{
+  "documentRoot": "/var/www/html/munin",
+  "cgiRoot": "/var/www/cgi-bin",
+  "cgiPath": "/munin-cgi",
+  "cgiUser": "munin",
+  "cookieSecret": "munin-secret",
+  "oauth": {
+    "clientID": "client-id",
+    "clientSecret": "client-secret",
+    "organization": "org-name",
+    "callbackURL": "callback-url"
+  }
+}
